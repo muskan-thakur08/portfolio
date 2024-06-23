@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+:root {
+    ---mainbluecolor: #7E22CE;
+    ---headfont: "Baloo 2", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 10rem;
+    box-shadow: 1px 1px 10px rgb(177, 175, 175);
+}
+
+.navbar .top {
+    min-width: 100%;
+    padding: 0.5rem 1.5rem;
+    height: 6rem;
+    border-bottom: 1px solid rgb(190, 184, 184);
+    /* border:2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside {
+    padding-bottom: 12px;
+}
+
+.leftside h1 {
+    color: var(---mainbluecolor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rightside {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.rightside ul {
+    display: flex;
+}
+
+.rightside li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.rightside li a {
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+    font-weight: 400;
+    color: black;
+    transition: all ease-in 0.1s;
+}
+
+.rightside li a:hover {
+    border-bottom: 2px solid var(---mainbluecolor);
+}
+
+.rightside button {
+    border: none;
+    background-color: var(---mainbluecolor);
+    color: white;
+    margin-right: 5px;
+    padding: 8px 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.moonicon {
+    margin-right: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 1.7rem 0.8rem 1.75rem;
+}
+
+.langList ul li a {
+    color: var(---mainbluecolor);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    margin: 0 auto;
+    margin: 4rem 0;
+    padding: 0 1.5rem 0 3rem;
+
+}
+
+.main .left {
+    width: 55%;
+    padding: 0 1rem 0 5rem;
+}
+
+.main .left h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+.main .left h1 span{
+    font-size: 2rem;
+}
+
+.main .left h2 {
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+
+.main .left h3 {
+    font-weight: 500;
+}
+
+.main span {
+    color: var(---mainbluecolor);
+    font-weight: 600;
+}
+
+.main .left p {
+    width: 90%;
+    margin-top: 15px;
+    color: gray;
+    line-height: 27px;
+}
+
+
+.btns .btn {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 23px;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.btns .btn1 {
+    background-color: #111827;
+    color: white;
+}
+
+.btns .btn2 {
+    margin: 0 16px;
+    color: #000;
+    background-color: #D1D5DB;
+}
+
+.main .right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+
+}
+
+/* pht ko hisab se kina code milai didinas milai dena */
+
+.main .right .img {
+    width: 17rem;
+    height: 27rem;
+    border-radius: 4rem 0 0 4rem;
+
+    padding: 2px;
+    transition: all linear 2s 0.5s;
+}
+
+/* .main .right .img:hover{
+    border: 4px solid var(---mainbluecolor);
+} */
+.main .right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem 0 0 4rem;
+    padding: 5px;
+
+}
+
+
+/* ChatGpt Code */
+
+.main .right .img {
+    position: relative;
+    padding: 2px;
+
+}
+
+.main .right .img::before,
+.main .right .img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3.5px solid transparent;
+    box-sizing: border-box;
+    padding: 2px;
+
+
+}
+
+.main .right .img::before {
+    top: 0;
+    left: 0;
+    border-top-color: var(---mainbluecolor);
+    border-left-color: var(---mainbluecolor);
+
+    transition: width 1.5s linear, height 1.5s linear;
+
+}
+
+.main .right .img::after {
+    bottom: 0;
+    right: 0;
+    border-bottom-color: var(---mainbluecolor);
+    border-right-color: var(---mainbluecolor);
+    transition: width 1.5s linear 1.5s, height 1.5s linear 1.5s;
+
+}
+
+.main .right .img:hover::before {
+    width: 0;
+    height: 0;
+
+}
+
+.main .right .img:hover::after {
+    width: 0;
+    height: 0;
+
+}
+
+.main-2 {
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 3rem;
+}
+
+.skills {
+    margin-top: 7rem;
+}
+
+.skills .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(---headfont);
+}
+
+.cards {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 4rem 0;
+
+}
+
+.cards .card {
+    /* background-color: #d1acf0; */
+    width: 30%;
+    margin: 1.5rem;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 24%) -2px 5px 11px 4px;
+    min-height: 83vh;
+
+}
+
+.cards .card:hover {
+    box-shadow: rgb(0 0 0 / 24%) -2px 4px 11px 7px;
+}
+
+.card .img {
+    width: 100%;
+    padding: 5px;
+    height: 19rem;
+    background-color: #7E22CE;
+    border-radius: 12px 12px 0 0;
+
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    /* padding: 5px; */
+    border-radius: 12px 12px 0 0;
+}
+
+.cards .card .head {
+    margin-top: 13px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(---headfont);
+}
+
+.cards .card .para {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cards .card .head,
+.cards .card .para {
+    padding: 0 1rem 0.5rem 1rem;
+    text-align: start;
+    color: black;
+}
+
+.cards .btn .btn3 {
+    margin: 14px 17px 0 17px;
+    padding: 4px 13px;
+    border: none;
+    background: var(---mainbluecolor);
+    color: white;
+    border-radius: 1rem;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+
+
+.main-3 {
+    width: 100%;
+    height: 70vh;
+    margin-top: 12rem;
+    padding: 0 2rem;
+    /* gar */
+ 
+}
+.main-3 .heading2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: var(---headfont);
+}
+
+.main-3 .boxes {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem ;
+    gap: 1.25rem;
+}
+
+.main-3 .box {
+    width: 50%;
+    margin: 10px;
+    height: 20rem;
+    padding: 32px;
+    border-radius: 7px;
+    background-color: #f3f4f6;
+}
+.main-3 .box .boxPara{
+    margin-top: 3rem;
+}
+.main-3 .box .name{
+    margin-top: 2rem;
+}
+.main-3 .box .name h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(---headfont);
+}
+.main-3 .box .name p{
+    color: gray;
+}
+footer .footer{
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 3rem;
+    /* background-color: burlywood; */
+}
+.footer .profile{
+    display: flex;
+    align-items: center;
+}
+.footer .profile .profile-name{
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer .profile .profile-name img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.footer .details{
+    color: gray;
+   font-size: 14px;
+    padding: 9px;
+    padding-left: 1rem;
+    border-left: 2px solid rgb(221, 218, 218);
+}
+.footer .apps{
+    padding: 0 2rem;
+}
+.footer .apps a{
+    color: #7c7777;
+    margin: 5px;
+    font-size: 1.15rem;
+}
+.footer .apps  .insta{
+    font-size: 1.22rem;
+}
