@@ -335,7 +335,8 @@ body{
 }
 
 .cards .btn .btn3 {
-    margin: 14px 17px 0 17px;
+    margin: 12
+        px 17px 0 17px;
     padding: 4px 13px;
     border: none;
     background: var(---mainbluecolor);
