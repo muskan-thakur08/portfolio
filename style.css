@@ -453,3 +453,19 @@ footer .footer {
 .footer .apps .insta {
     font-size: 1.22rem;
 }
+
+#parent-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+}
+
+#line {
+    height: 0.195rem;
+    width: 7rem;
+    background-color: #7E22CE;
+    text-align: center;
+
+}
